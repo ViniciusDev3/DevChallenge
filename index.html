@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <div class="container_header">
+                <div class="logo">
+                    <h2>DevChallenge</h2>
+                </div>
+                <nav class="nav">
+                    <div class="icon">
+                        <img src="/menu-regular-48.png">
+                    </div>
+                    <div class="menu">
+                        <ul style="list-style-type: none;">
+                            <li><a href="Home">Home</a></li>
+                            <li><a href="Features">Features</a></li>
+                            <li><a href="Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container_main">
+                <div class="grupo">
+                    <div class="T1">
+                        <h2>
+                            Create amazing graphics
+                        </h2>
+                    </div>
+                    <div class="T2">
+                        <p>
+                            Colaborate and create beautiful graphics with your team
+                        </p>
+                    </div>
+                    <div class="BT">
+                        <button>
+                            Start now
+                        </button>
+                    </div>
+                </div>
+                <div class="imagem">
+                    <img src="/team.jpg">
+                </div>
+            </div>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(".icon").click(function () {
+                $(".nav").toggleClass("active");
+            });
+        </script>
+    </body>
+</html>

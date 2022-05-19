@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container_header {
+    margin: 0 20px;
+    height: 70px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav {
+    align-items: center;   
+}
+.logo {
+    color: #D2872C;
+}
+.logo:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+li {
+    padding: 0 10px;
+}
+.menu a{
+    text-decoration: none;
+    color: #766F68;
+}
+a {
+    font-size: 20px;
+}
+a:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .05);
+}
+.icon{
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.container_main {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0 60px;
+    justify-content: center;
+}
+.grupo {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+.T1, .T2 {
+    color: #766F68;
+    margin: 0;
+    padding: 0;
+}
+.T1 {
+    font-size: 50px;
+    align-items: center;
+}
+.T2 {
+    font-size: 30px;
+}
+.BT button{
+    height: 50px;
+    width: 240px;
+    background-color: #D2872C;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    border: #D2872C;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 165, .05);
+}
+.imagem {
+    padding: 40px 0;
+}
+.imagem img {
+    height: 400px;
+    width: 600px;
+}
+
+@media (max-width: 1024px) {
+    .container_main {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+@media (max-width: 800px) {
+    .nav {
+        margin: 0;
+        padding: 0;
+    }
+    .container_header {
+        flex-direction: column;
+        align-items: unset;
+    }
+    .logo {
+        width: 140px;
+    }
+    .icon {
+        display: flex;
+    }
+    .icon:hover {
+        cursor: pointer;
+    }
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .active .menu ul {
+        display: flex;
+    }
+    li {
+        text-align: center;
+        background-color: white;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: solid 2px black;
+        z-index: 1000;
+    }
+    li:hover {
+        background-color: rgba(0, 0, 0, .05);
+    }
+    a:hover {
+        background-color: unset;
+    }
+    .grupo {
+        width: 600px;
+    }
+}
